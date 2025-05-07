@@ -1,0 +1,27 @@
+openai==0.28.1
+mangum==0.17.0
+python-dotenv==1.0.0
+fastapi==0.95.2
+uvicorn==0.22.0
+pydantic==1.10.8
+
+# Installation instructions:
+# To set up a virtual environment and install dependencies:
+#
+# On Windows:
+# python -m venv venv
+# venv\Scripts\activate
+# pip install -r requirements.txt
+#
+# On Linux/Mac:
+# python -m venv venv
+# source venv/bin/activate
+# pip install -r requirements.txt
+#
+# For AWS Lambda deployment:
+# 1. Activate your virtual environment
+# 2. pip install -r requirements.txt -t ./package
+# 3. cd package
+# 4. cp ../app.py ../utils.py .
+# 5. zip -r ../lambda_deployment.zip .
+# 6. Upload lambda_deployment.zip to AWS Lambda

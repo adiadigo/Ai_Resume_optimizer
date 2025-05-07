@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Optimizer</h1>
+            <p>Get AI-powered suggestions to tailor your resume for specific job descriptions</p>
+        </header>
+
+        <main>
+            <form id="optimizerForm">
+                <div class="form-group">
+                    <label for="resumeText">Your Resume</label>
+                    <textarea 
+                        id="resumeText" 
+                        name="resumeText" 
+                        rows="10" 
+                        placeholder="Paste your resume text here..."
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobDescription">Job Description</label>
+                    <textarea 
+                        id="jobDescription" 
+                        name="jobDescription" 
+                        rows="10" 
+                        placeholder="Paste the job description here..."
+                        required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="submitBtn">Optimize Resume</button>
+                </div>
+            </form>
+
+            <div class="results-container" id="resultsContainer">
+                <h2>Optimization Suggestions</h2>
+                <div id="loadingIndicator" class="loading">
+                    <div class="spinner"></div>
+                    <p>Analyzing your resume...</p>
+                </div>
+                <div id="resultContent"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by OpenAI GPT-3.5 Turbo</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
